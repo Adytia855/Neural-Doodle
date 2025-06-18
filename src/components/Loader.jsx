@@ -1,5 +1,5 @@
 const Loader = () => (
-  <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-950/60 backdrop-blur-sm">
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-trasparent backdrop-blur-sm">
     <div
       className="w-24 h-24 rounded-full bg-gradient-to-tr from-cyan-400 via-teal-400 to-indigo-500 animate-spin"
       style={{ animationDuration: "2s" }}
