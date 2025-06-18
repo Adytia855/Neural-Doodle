@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+
+:root {
+  /* LIGHT MODE */
+  --bg-from: #f0f4f8;
+  --bg-via: #d9e2ec;
+  --bg-to: #bcccdc;
+  --text-main: #1f2937;
+}
+
+:root.dark {
+  /* DARK MODE */
+  --bg-from: #0f2027;
+  --bg-via: #203a43;
+  --bg-to: #2c5364;
+  --text-main: #f8fafc;
+}
+
+body {
+  @apply min-h-screen font-sans tracking-wide transition-colors duration-300;
+  background: linear-gradient(
+    to bottom right,
+    var(--bg-from),
+    var(--bg-via),
+    var(--bg-to)
+  );
+  color: var(--text-main);
+}
+
+input, textarea {
+  color: var(--text-main);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-main);
+  opacity: .6;  
+}
