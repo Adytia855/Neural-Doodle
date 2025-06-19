@@ -3,7 +3,6 @@
 [![React](https://img.shields.io/badge/React-19.x-61DAFB?logo=react)](https://reactjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1-06B6D4?logo=tailwind-css)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-4.x-B73BFE?logo=vite)](https://vitejs.dev/)
-[![License](https://img.shields.io/badge/License-MIT-black)](LICENSE)
 
 **Transform text prompts into stunning artwork** with style selection. Built with React and Tailwind CSS.
 
