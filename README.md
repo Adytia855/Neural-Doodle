@@ -8,9 +8,7 @@
 **Transform text prompts into stunning artwork** with style selection. Built with React and Tailwind CSS.
 
 ![UI Preview](public/neural.jpg)
-## 🌟 For Everyone
-Star the repo if you like it! ⭐
-https://img.shields.io/github/stars/Adytia855/NeuralDoodle?style=social
+## 🌟 For Everyone Star the repo if you like it! ⭐
 
 ## ✨ Key Features
 - **AI-Powered Image Generation** from text prompts
