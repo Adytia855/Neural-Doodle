@@ -67,19 +67,21 @@ const ImageGenerator = () => {
     >
       <div className="flex flex-wrap gap-2 mb-4 justify-center">
         {STYLE_OPTIONS.map((style) => (
-          <button
+          <motion.button
             key={style}
+            whileTap={{ scale: 0.92 }}
+            whileHover={{ scale: 1.1 }}
             onClick={() => setSelectedStyle(style)}
-            className={`px-3 py-1 rounded-full text-xs font-medium border transition
+            className={`px-3 py-1 rounded-full text-xs font-medium border transition cursor-pointer 
               ${""}
               ${
                 selectedStyle === style
                   ? "bg-cyan-500 text-white border-cyan-500"
                   : "bg-white/10 text-[var(--text-main)] border-white/20"
-              }`}
+                } dark:hover:bg-cyan-500`}
           >
             {style}
-          </button>
+          </motion.button>
         ))}
       </div>
 
@@ -98,10 +100,10 @@ const ImageGenerator = () => {
         />
         <motion.button
           whileTap={{ scale: 0.92 }}
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.1 }}
           onClick={handleGenerate}
           disabled={loading}
-          className="bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-emerald-400 hover:to-cyan-400 text-white font-bold px-5 py-2 rounded-xl transition-all duration-300 shadow-md disabled:opacity-40"
+          className="bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-emerald-400 hover:to-cyan-400 text-white font-bold px-5 py-2 rounded-xl transition-all duration-300 shadow-md disabled:opacity-40 cursor-pointer"
         >
           {loading ? "Generating..." : "Generate"}
         </motion.button>

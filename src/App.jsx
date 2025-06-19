@@ -18,7 +18,7 @@ const App = () => {
           onClick={toggleTheme}
           className={`rounded-full px-4 py-2 text-sm font-semibold backdrop-blur
             hover:scale-105 active:scale-95 transition
-            text-[var(--text-main)]
+            text-[var(--text-main)] cursor-pointer
             ${theme === "dark" ? "bg-white/20" : "bg-black/10"}`}>
           
           {theme === "dark" ? "🌙 Dark" : "🌞 Light"}
